@@ -1,2 +1,11 @@
+<div  *ngIf = "success; then updated_message; else error_message"></div>
+
+<ng-template #updated_message>
+  user was updated
+</ng-template>
+
+<ng-template #error_message>
+  user not found
+</ng-template>
 
 <router-outlet></router-outlet>
